@@ -12,7 +12,7 @@ title: "VSCode Reveal intro"
 
 Bologna Big Data meetup
 
-3rd March 2020 @ LuogoComune
+9th April 2020 @ Home
 
 ---
 
@@ -52,7 +52,7 @@ WASP lets you **focus** on your data, business logic and algorithms, without wor
 WASP empowers **multiple** mission critical use cases
 
 - running in production since 2017 🚀
-- serves hundreds of thousands of devices
+- handles real-time streams from hundreds of thousands of devices
 
 --
 
@@ -98,22 +98,19 @@ Not just a "library" but a simplified __way__ for:
 --
 
 ### IoT
-
---
-
-### Data Ingestion
-
---
-
-### Data Transformation
+![](assets/io_k_l.png)
 
 --
 
 ### Kappa-Lambda Architecture
 
+![](assets/k_l.png)
+
 --
 
 ### Machine Learning
+
+![](assets/ML.png)
 
 ---
 
@@ -157,10 +154,10 @@ Not just a "library" but a simplified __way__ for:
 
 ### High Availability
 
-1. Each "role" is in **hot-standby**
-2. Automatic recover
-3. Close-to-zero downtime
-   - even if multiple nodes fail 
+1. "roles"are Akka cluster singletons
+1. Automatic recover
+1. Close-to-zero downtime
+   - even if multiple nodes fail
 
 --
 
@@ -183,7 +180,7 @@ Not just a "library" but a simplified __way__ for:
 
 ### RT-consumers
 
-- Akka Stream
+- Akka Actors
 - Suitable for Low Latency
 - Lower througput than Spark Streaming
 
@@ -191,9 +188,9 @@ Not just a "library" but a simplified __way__ for:
 
 ### Spark as a Service
 
-- Start/Stop processing from REST API
-- ...
-- ...
+- Start/Stop streaming processing from REST API
+- Start/Monitor batch processing from REST API
+- Resource sharing between Spark Jobs
 
 --
 
@@ -201,6 +198,14 @@ Not just a "library" but a simplified __way__ for:
 
 Seamless darwin integration
 ![](assets/darwin.png)
+
+--
+
+### Avro Encoder
+
+- available before spark 2.4
+- opt-in single object encoding
+- Spark codegen
 
 --
 
@@ -238,17 +243,17 @@ Seamless darwin integration
 
 # Upcoming features
 
---
+---
 
 ![Delta](assets/delta-lake.png)
 
---
+---
 
 ## Apache Flink
 
 ![Flink](assets/flink.gif)
 
---
+---
 
 ## UI for better UX
 
@@ -256,7 +261,7 @@ Seamless darwin integration
 
 - 😎 UI are for everyone
 
---
+---
 
 ## GDPR module
 
@@ -266,15 +271,11 @@ Seamless darwin integration
 
 ![](assets/gdpr2.jpg)
 
---
+---
 
 ## Data (Lake) Catalog
 
 ![](assets/data_catalog.jpg)
-
---
-
-## Kafka Batch Writer
 
 ---
 
