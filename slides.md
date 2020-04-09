@@ -63,6 +63,7 @@ WASP empowers **multiple** mission critical use cases
 - Batch
 - Pluggable Datastore
 
+
 --
 
 # Analytics
@@ -119,7 +120,7 @@ Not just a "library" but a simplified __way__ for:
 - Encourages Architectural Correctness
 - Monitoring
 - High Availability
-- `Either[Dev, Ops]`
+- Auto-ops
 - Producers
 - RT-consumers
 
@@ -140,7 +141,7 @@ Not just a "library" but a simplified __way__ for:
 
 - Wrong architectural choices are **difficult**
 - Encourages process de-coupling
-- ...
+- HLD is mapped 1 to 1 to Wasp models 
 
 --
 
@@ -154,16 +155,18 @@ Not just a "library" but a simplified __way__ for:
 
 ### High Availability
 
-1. "roles"are Akka cluster singletons
+1. "roles" are Akka cluster singletons
 1. Automatic recover
 1. Close-to-zero downtime
    - even if multiple nodes fail
 
 --
 
-### Either[Dev, Ops]
+### Auto-ops
 
-- Code agnostic from data format
+- Code agnostic from 
+  - data format 
+  - data source
 - Clear distinction between
   - business logic
   - physical boundaries
@@ -243,17 +246,17 @@ Seamless darwin integration
 
 # Upcoming features
 
----
+--
 
 ![Delta](assets/delta-lake.png)
 
----
+--
 
 ## Apache Flink
 
 ![Flink](assets/flink.gif)
 
----
+--
 
 ## UI for better UX
 
@@ -261,7 +264,7 @@ Seamless darwin integration
 
 - 😎 UI are for everyone
 
----
+--
 
 ## GDPR module
 
@@ -271,7 +274,7 @@ Seamless darwin integration
 
 ![](assets/gdpr2.jpg)
 
----
+--
 
 ## Data (Lake) Catalog
 
